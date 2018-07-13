@@ -19,19 +19,31 @@
     <![endif]-->
   </head>
   <body>
-    <div id="nav">
+    <!-- 導覽列 -->
+    <nav class="my-nav navbar navbar-default">
       <div class="container">
-        <button type="button" class="menu-button">
-          三
-        </button>
-        <input type="checkbox" class="menu-button-checkbox">
-        <ul class="menu">
-          <li><a href="#about">Who am I</a></li>
-          <li><a href="#my-work">My Work</a></li>
-          <li><a href="#contact-me">Contact me</a></li>
-        </ul>
-      </div>
-    </div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">我的作品集</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="pull-right nav navbar-nav">
+            <li><a class="btn btn-default" href="#about" role="button">Who am I</a></li>
+            <li><a class="btn btn-default" href="#my-work" role="button">My work</a></li>
+            <li><a class="btn btn-default" href="#contact-me" role="button">Contact me</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
     <div id="content">
       <div class="container">
         <div id="about">
