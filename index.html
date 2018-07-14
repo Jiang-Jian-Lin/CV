@@ -7,6 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Welcome to Charile’s Site!!!</title>
     <!-- 引入 Bootstrap 樣式 -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link type="text/css" rel="stylesheet" href="css/style.css">
     
@@ -19,8 +20,8 @@
     <![endif]-->
   </head>
   <body>
-    <!-- 導覽列 -->
-    <nav class="my-nav navbar navbar-default">
+    <!-- header -->
+    <nav class="navbar-fixed-top my-nav navbar navbar-default">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -30,7 +31,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">我的作品集</a>
+          <a class="navbar-brand" href="#project">Portfolio Website</a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -38,12 +39,11 @@
           <ul class="pull-right nav navbar-nav">
             <li><a class="btn btn-default" href="#about" role="button">About</a></li>
             <li><a class="btn btn-default" href="#project" role="button">Project</a></li>
-            <li><a class="btn btn-default" href="#contact-me" role="button">Contact</a></li>
+            <li><a class="btn btn-default" href="#contact" role="button">Contact</a></li>
           </ul>
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-    
     <!-- Who am I -->
     <div class="container" id="about">
       <div class="row">
@@ -135,30 +135,54 @@
     </div>
 
         <hr class="bar">
-        <div id="contact-me">
-          <h1>Contact me</h1>
-          <p></p>
-          <form action="" class="contact-form">
-            <div class="form-row">
-              <label for="name">姓名</label>
-              <input id="name" name="name" type="text">
+    <!-- Contact me -->
+    <h1 class="text-center" id="contact">Contact</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+          <form>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name">
             </div>
-            <div class="form-row">
+            <div class="form-group">
               <label for="email">Email</label>
-              <input id="email" name="email" type="email">
+              <input type="email" class="form-control" id="email">
             </div>
-            <div class="form-row">
-              <label for="message">訊息</label>
-              <textarea name="message" id="message"></textarea>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea class="form-control" id="message" rows="3"></textarea>
+              <p class="help-block"></p>
             </div>
-            <div class="form-row">
-              <button type="reset">重設</button>
-              <button type="sumbit">提交</button>
-            </div>
+            <button type="reset" class="btn btn-danger">Reset</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
     </div>
+        <hr class="bar">
+    <!-- CopyRight -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-contect col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3 col-lg-4 col-lg-offset-4">
+            <p>&copy; 2017 ALPHA Camp | All Rights Reserved.</p>
+
+            <div class="footer-social-icon">
+              <ul>
+                <a href="https://www.facebook.com/profile.php?id=100004016841098"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/RoomRoomBen"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="https://github.com/Loserbirdman5566?tab=repositories"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+                <a href=""><i class="fa fa-skype" aria-hidden="true"></i></a>
+                <a href="https://www.linkedin.com/in/jianlin-jiang-a8b547166/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
 
     <!-- Bootstrap 插件是基於 jQuery 之上，所以須先引入 jQuery -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
